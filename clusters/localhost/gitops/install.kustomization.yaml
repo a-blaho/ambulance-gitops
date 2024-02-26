@@ -7,7 +7,7 @@ spec:
   wait: true
   force: true
   dependsOn:
-    - name: prepare
+  - name: prepare
   interval: 42s
   path: clusters/localhost/install
   prune: true

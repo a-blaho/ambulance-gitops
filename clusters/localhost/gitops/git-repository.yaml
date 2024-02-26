@@ -10,4 +10,4 @@ spec:
   secretRef:
     name: repository-pat
   timeout: 1m0s
-  url: https://github.com/a-blaho/ambulance-gitops
+  url: https://github.com/ablaho/ambulance-gitops
