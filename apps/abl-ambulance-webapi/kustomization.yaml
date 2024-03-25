@@ -4,3 +4,8 @@ kind: Kustomization
 resources: # zoznam manifestov - objektov,
   # ktoré sú súčasťou tejto aplikácie
   - "https://github.com/a-blaho/ambulance-webapi//deployments/kustomize/install" # ?ref=v1.0.1
+  - openapi-ui.service.yaml
+  - http-route.yaml
+
+patches:
+  - path: patches/ambulance-webapi.deployment.yaml

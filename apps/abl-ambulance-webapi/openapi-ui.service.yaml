@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: abl-openapi-ui
+spec:
+  selector:
+    pod: abl-ambulance-webapi-label
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8081
