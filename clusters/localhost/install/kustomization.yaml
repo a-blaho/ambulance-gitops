@@ -10,6 +10,11 @@ commonLabels:
 
 resources:
   - ../../../apps/abl-ambulance-ufe
+  - ../../../apps/abl-ambulance-webapi
 
 components:
   - ../../../components/version-developers
+  - https://github.com/a-blaho/ambulance-webapi//deployments/kustomize/components/mongodb
+
+patches:
+  - path: patches/ambulance-webapi.service.yaml
